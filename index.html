@@ -121,8 +121,20 @@
 			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="width:100%">
+			<style>
+				ol { 
+					list-style-type: none; /* Remove default numbering */ 
+					counter-reset: list; /* Create a counter */ 
+					} 
+				li { 
+				counter-increment: list; /* Increment the counter */ 
+				} 
+				li::before { 
+					content: "[" counter(list) "] "; /* Add brackets around the counter */ 
+				} 
+			</style> 
               <p>
-              <ol>
+              <ol class="bracketed-list">
 				<li> S. Wang, J. Fernández-Catalá, Q. Shu, M. Huttul, W. Cao, H. Singh. Insights into Ni3TeO6 calcination via in situ synchrotron X-ray diffraction. Physical Chemistry Chemical Physics, 2024, Advance Article. DOI: <a href="https://doi.org/10.1039/D4CP03765K">10.1039/D4CP03765K</a>. </li>
 				<li> Y. Xiong, H. Li, Y. Li, X. Zha, X. Du, F. Ren, S. Wang. Enhanced strength-ductility synergy in a Ni-W-Co-Ta medium-heavy alloy via cryogenic supersonic fine particle bombardment. Journal of Materials Research and Technology, 33, (2024), 6157-6167. DOI: <a href="https://doi.org/10.1016/j.jmrt.2024.11.008">10.1016/j.jmrt.2024.11.008</a>.</li>
 			    
